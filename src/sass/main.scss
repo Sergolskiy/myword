@@ -68,6 +68,9 @@ ul{
 }
 
 * {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -86,6 +89,29 @@ body.hidden{
 
 a{
   color: #090909;
+}
+
+h2{
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.h2-light{
+  font-family: "Ubuntu";
+  font-size: 20px;
+}
+
+h3{
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h4{
+  font-family: "Ubuntu";
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .tablet{
