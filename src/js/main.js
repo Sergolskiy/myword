@@ -205,6 +205,18 @@ $(document).ready(function () {
     $(this).closest('.header__menu-item').toggleClass('open');
   });
 
+  var limitSlider = document.getElementById('slider-limit');
+
+  noUiSlider.create(limitSlider, {
+    start: [0],
+    behaviour: 'drag',
+    connect: true,
+    range: {
+      'min': 0,
+      'max': 100
+    }
+  });
+
 });
 
 
