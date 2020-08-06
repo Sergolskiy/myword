@@ -166,7 +166,7 @@ input{
 }
 
 .site-container{
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 
@@ -190,17 +190,130 @@ input{
   }
 }
 
+.header{
+  background: #290773;
+  padding: 8px 0;
+
+  &__inner{
+
+  }
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left{
+
+  }
+
+  &__menu{
+    display: flex;
+  }
+
+  &__menu-item{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__menu-link{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__menu-arr{
+    display: block;
+    width: 12px;
+    height: 6px;
+    background: url("../img/icon/arr-bot-w.svg") center center no-repeat;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &__submenu{
+    display: none;
+  }
+
+  &__submenu-item{
+
+  }
+
+  &__submenu-link{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__right{
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn{
+    margin-right: 25px;
+  }
+
+  &__info{
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+
+    margin-right: 25px;
+    padding-right: 25px;
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background: #AEADA8;
+    }
+  }
+
+  &__exit{
+
+  }
+
+  &__exit-btn{
+
+  }
+
+}
+
+
 .site-btn{
   display: inline-block;
-  background: #FFC700;
-  padding: 15px 33px;
-  text-transform: uppercase;
+  font-family: Ubuntu;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 3px 16px 5px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #ffffff;
   transition: 0.3s;
 
   &:hover{
-    box-shadow: 0px 0px 9px #FFC700;
+    color: #0F0F0F;
+    background: #ECE9DF;
+  }
+
+  &:active{
+    color: #0F0F0F;
+    background: #FFFFFF;
   }
 
   &--red{
