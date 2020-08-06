@@ -180,15 +180,13 @@ $(document).ready(function () {
   });
 
   $(document).on('click', '.popup__close', function (e) {
-    $('.popup ').removeClass('open');
-    $('body').removeClass('hidden');
+    $(this).closest('.popup ').removeClass('open');
   });
 
   $(document).on('click', '.popup', function (e) {
 
     if(e.target.classList[0] == "popup") {
       $('.popup ').removeClass('open');
-      $('body').removeClass('hidden');
     }
   });
   /*popups end*/

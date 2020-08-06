@@ -68,6 +68,13 @@ block content
         a(href="#").option__item Train
         a(href="#").option__item Convert
 
+      .option__popup.popup.option-popup.open
+        .popup__inner
+          .popup__close
+          .popup__body.
+            Extract faces from image or video sources.<br>
+            Exstraction plugins can be configured in the Settings Menu
+
 
     .main-content.site-container
       .main-content__row.row
@@ -83,6 +90,9 @@ block content
                     include ../img/icon/icon_video.svg
                   a(href="#")
                     include ../img/icon/icon_image.svg
+                  .tooltip
+                    .tooltip__body.
+                      Input Directory of video. Either a directory containing the image files you wish to process or path to a video file. NB: this should be the source video/frames not the source faces.
               .section__row.hover-js
                 .section__inputtext
                   label(for="inputtext02") Output Dir
