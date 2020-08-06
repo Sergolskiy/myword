@@ -1,0 +1,524 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Service page";
+  - var pageClass = "";
+  - var pageActive = "servicepage";
+
+block content
+  //.webp-img(data-webp="./img/Rectangle5.webp" data-img="./img/Rectangle5.jpg")
+
+    picture
+      source(srcset="./img/logo.webp" type="image/webp")
+      source(srcset="./img/logo.jpg" type="image/png")
+      img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+
+  div.main-wrap
+
+
+    //.one-procedure.b-lazy.webp-img(data-webp="./img/one-procedure.webp"
+      data-webp-mobile="./img/one-procedure-mobile.webp"
+      data-img="./img/one-procedure.jpg"
+      data-img-mobile="./img/one-procedure-mobile.jpg")
+
+    .top-block.b-lazy.webp-img(data-webp="./img/service-top-bg.webp" data-img="./img/service-top-bg.png" data-webp-mobile='./img/service-top-bg-mob.webp' data-img-mobile="./img/service-top-bg.png")
+      .top-block__inner.top-block__inner--service-page.site-container
+        .top-block__top-line
+          .top-block__phone
+            a(href="tel:88003012803") 8 (800) 301-28-03
+            span анонимно, бесплатно, круглосуточно
+          .top-block__address г. Москва, ул. Олеко Дундича, 25
+        .top-block__title.top-block__title--service Вывод из запоя в Москве на дому и стационаре клиники «Практик»
+        .top-block__caption.top-block__caption--service Будем в течении 39 минут
+          a(href="#").top-block__btn.site-btn.site-btn--red вызвать нарколога от 2 500 ₽
+        .top-block__items
+          a(href="#").top-block__link Доступные цены
+          a(href="#").top-block__link 100% анонимность
+          a(href="#").top-block__link Круглосуточно
+        .breadcrumb
+          a(href="#").breadcrumb__item Главная
+          i &nbsp; / &nbsp;
+          span.breadcrumb__item Вывод из запоя
+        a(href="#").top-block__btn.site-btn.site-btn--red.tablet вызвать нарколога от 2 500 ₽
+
+
+      .top-block__form-bg.top-block__form-bg--service.b-lazy.webp-img(data-webp="./img/service-top-right.webp" data-img="./img/service-top-right.png")
+      .top-block__form-bg.top-block__form-bg--service-left.b-lazy.webp-img(data-webp="./img/service-top-left.webp" data-img="./img/service-top-left.png")
+
+
+    .one-procedure
+      .one-procedure__inner
+        .one-procedure__txt В <strong>82%</strong> случаев достаточно одной процедуры
+        .one-procedure__list
+          .one-procedure__item
+            .one-procedure__item-content.b-lazy.webp-img(data-webp="./img/one-procedure01.webp"
+            data-webp-mobile="./img/one-procedure01.webp"
+            data-img="./img/one-procedure01.png"
+            data-img-mobile="./img/one-procedure01.png")
+              .one-procedure__ico.one-procedure__ico--1
+              .one-procedure__item-txt Позвоните нам <br> по бесплатному <br> телефону
+          .one-procedure__item
+            .one-procedure__item-content.b-lazy.webp-img(data-webp="./img/one-procedure02.webp"
+            data-webp-mobile="./img/one-procedure02.webp"
+            data-img="./img/one-procedure02.png"
+            data-img-mobile="./img/one-procedure02.png")
+              .one-procedure__ico.one-procedure__ico--2
+              .one-procedure__item-txt Врач выезжает <br> немедленно
+          .one-procedure__item
+            .one-procedure__item-content.b-lazy.webp-img(data-webp="./img/one-procedure03.webp"
+            data-webp-mobile="./img/one-procedure03.webp"
+            data-img="./img/one-procedure03.png"
+            data-img-mobile="./img/one-procedure03.png")
+              .one-procedure__ico.one-procedure__ico--3
+              .one-procedure__item-txt Капельница <br> снимает боль <br> и симптомы
+          .one-procedure__item
+            .one-procedure__item-content.b-lazy.webp-img(data-webp="./img/one-procedure04.webp"
+            data-webp-mobile="./img/one-procedure04.webp"
+            data-img="./img/one-procedure04.png"
+            data-img-mobile="./img/one-procedure04.png")
+              .one-procedure__ico.one-procedure__ico--4
+              .one-procedure__item-txt Сон <br> восстановит <br> организм
+          .one-procedure__item
+            .one-procedure__item-content.b-lazy.webp-img(data-webp="./img/one-procedure05.webp"
+            data-webp-mobile="./img/one-procedure05.webp"
+            data-img="./img/one-procedure05.png"
+            data-img-mobile="./img/one-procedure05.png")
+              .one-procedure__ico.one-procedure__ico--5
+              .one-procedure__item-txt Вернётся <br> способность <br> работать и водить
+
+    .programs.b-lazy.webp-img(data-webp="./img/programs-bg.webp"
+      data-webp-mobile="./img/programs-bg-mobile.webp"
+      data-img="./img/programs-bg.jpg"
+      data-img-mobile="./img/programs-bg-mobile.jpg")
+
+      .programs__inner.site-container
+        .programs__title.site-title2 НАШИ ПРОГРАММЫ ДЕТОКСИКАЦИИ
+        .programs__content.programs__slider
+          .programs__item
+            .programs__item-content
+              .programs__head
+                .programs__head-price
+                  span 2500
+                    include ../img/icon/rub.svg
+                  | стандартная
+              .programs__body
+                .programs__txt <strong>400мл.</strong> Объём капельницы
+                .programs__list.programs__list--check
+                  ul
+                    li Выезд доктора
+                    li Осмотр пациента
+                    li Детоксикационная терапия
+                    li Успокоительные, седативные, противорвотные + витамины
+                    li Пациенту оставляются препараты на 2-3 дня (таблетки)
+                .programs__list.programs__list--cross
+                  ul
+                    li В капельницу включено большее количество препаратов
+                    li Снятие и описание ЭКГ
+                    li Комплекс препаратов, которые снижают токсический вред алкоголя
+                    li Гепатропротекторы
+                    li Препараты улучшающие мозговую деятельность
+              .programs__bottom
+                a(href="#").programs__btn ЗАКАЗ ПО WHATSAPP
+          .programs__item
+            .programs__item-content
+              .programs__head
+                .programs__head-price
+                  span 3500
+                    include ../img/icon/rub.svg
+                  | усиленная
+              .programs__body
+                .programs__txt <strong>400-600мл.</strong> Объём капельницы
+                .programs__list.programs__list--check
+                  ul
+                    li Выезд доктора
+                    li Осмотр пациента
+                    li Детоксикационная терапия
+                    li Успокоительные, седативные, противорвотные + витамины
+                    li Пациенту оставляются препараты на 2-3 дня (таблетки)
+                    li В капельницу включено большее количество препаратов
+                .programs__list.programs__list--cross
+                  ul
+                    li Снятие и описание ЭКГ
+                    li Комплекс препаратов, которые снижают токсический вред алкоголя
+                    li Гепатропротекторы
+                    li Препараты улучшающие мозговую деятельность
+              .programs__bottom
+                a(href="#").programs__btn ЗАКАЗ ПО WHATSAPP
+          .programs__item
+            .programs__item-content
+              .programs__head
+                .programs__head-price
+                  span 4500
+                    include ../img/icon/rub.svg
+                  | двойная
+              .programs__body
+                .programs__txt <strong>800-900мл.</strong> Объём капельницы
+                .programs__list.programs__list--check
+                  ul
+                    li Выезд доктора
+                    li  Осмотр пациента
+                    li  Детоксикационная терапия
+                    li  Успокоительные, седативные, противорвотные + витамины
+                    li  Пациенту оставляются препараты на 2-3 дня (таблетки)
+                    li  В капельницу включено большее количество препаратов
+                    li  Снятие и описание ЭКГ
+                    li  Комплекс препаратов, которые снижают токсический вред алкоголя
+                    li  Гепатропротекторы
+                .programs__list.programs__list--cross
+                  ul
+                    li Препараты улучшающие мозговую деятельность
+              .programs__bottom
+                a(href="#").programs__btn ЗАКАЗ ПО WHATSAPP
+          .programs__item
+            .programs__item-content
+              .programs__head
+                .programs__head-price
+                  span 6500
+                    include ../img/icon/rub.svg
+                  | Интенсивная
+              .programs__body
+                .programs__txt <strong>900-1200мл.</strong> Объём капельницы
+                .programs__list.programs__list--check
+                  ul
+                    li Выезд доктора
+                    li  Осмотр пациента
+                    li  Детоксикационная терапия
+                    li  Успокоительные, седативные, противорвотные + витамины
+                    li  Пациенту оставляются препараты на 2-3 дня (таблетки)
+                    li  В капельницу включено большее количество препаратов
+                    li  Снятие и описание ЭКГ
+                    li  Комплекс препаратов, которые снижают токсический вред алкоголя
+                    li  Гепатропротекторы
+                    li  Препараты улучшающие мозговую деятельность
+              .programs__bottom
+                a(href="#").programs__btn ЗАКАЗ ПО WHATSAPP
+
+
+    .help-block.b-lazy.webp-img(data-webp="./img/help-block-bg.webp"
+      data-webp-mobile="./img/help-block-bg-mobile.webp"
+      data-img="./img/help-block-bg.png"
+      data-img-mobile="./img/help-block-bg-mobile.jpg")
+      .help-block__inner.site-container
+        .help-block__content
+          .help-block__title Нужна помощь в выходе из запоя?
+          .help-block__caption ОБРАЩАЙТЕСЬ К НАМ
+          .help-block__desc Специалист проведет процедуру анонимно
+          .help-block__form
+            form.top-block__form-i.help-block__form-i
+              input(type="text" placeholder="Ваше имя" required)
+              input(type="text" inputmode="numeric" placeholder="+7 (___) ___-__-__").phone
+              .form__btn-wrap.site-btn--img-wrap
+                button(style='display: none;')
+                a(href="#").site-btn--red.site-btn--img отправить
+                  picture
+                    source(srcset="./img/icon/blokno-ico.webp" type="image/webp")
+                    source(srcset="./img/icon/blokno-ico.png" type="image/png")
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="100" height="93")
+              .help-block__form-caption *Ваши данные останутся конфиденциальны.
+
+    .equipment
+      .equipment__inner.site-container
+        .equipment__title.site-title2 При выезде на дом к пациенту <br> наши врачи оснащены
+        .equipment__content
+          .equipment__main-photo
+            picture
+              source(srcset="./img/equipment-main.webp" type="image/webp")
+              source(srcset="./img/equipment-main.png" type="image/png")
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="680" )
+          .equipment__photo-list
+            .equipment__photo-item.equipment__photo-item--1
+              picture
+                source(srcset="./img/equipment-item01.webp" type="image/webp")
+                source(srcset="./img/equipment-item01.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="170" )
+              span Глюкометр
+            .equipment__photo-item.equipment__photo-item--2
+              picture
+                source(srcset="./img/equipment-item02.webp" type="image/webp")
+                source(srcset="./img/equipment-item02.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="170" )
+              span Забор крови
+            .equipment__photo-item.equipment__photo-item--3
+              picture
+                source(srcset="./img/equipment-item03.webp" type="image/webp")
+                source(srcset="./img/equipment-item03.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="170" )
+              span Анализы
+            .equipment__photo-item.equipment__photo-item--4
+              picture
+                source(srcset="./img/equipment-item04.webp" type="image/webp")
+                source(srcset="./img/equipment-item04.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="170" )
+              span Лекарства
+            .equipment__photo-item.equipment__photo-item--5
+              picture
+                source(srcset="./img/equipment-item05.webp" type="image/webp")
+                source(srcset="./img/equipment-item05.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="170" )
+              span Кардиомонитор
+            .equipment__photo-item.equipment__photo-item--6
+              picture
+                source(srcset="./img/equipment-item06.webp" type="image/webp")
+                source(srcset="./img/equipment-item06.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="170" )
+              span Аппарат ЭКГ
+
+        .equipment__subtitle Быстро и эффективно поможем преодолеть запой
+        .equipment__caption ОБРАЩАЙТЕСЬ К НАМ
+        .equipment__txt Мы используем только проверенные препараты
+
+    .sentence.b-lazy.webp-img(data-webp="./img/sentence-bg.webp"
+      data-webp-mobile="./img/sentence-bg-mobile.webp"
+      data-img="./img/sentence-bg.png"
+      data-img-mobile="./img/sentence-bg-mobile.png")
+      .sentence__inner.site-container
+        .sentence__content.site-container__inner
+          .sentence__title Мы предлагаем то, что действительно работает
+          ul.sentence__list
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico01.svg" alt="img" width="72" height="72")
+              .sentence__txt Эффективные и безопасные методики, <br> опытные врачи (только психиатры-наркологи).
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico02.svg" alt="img" width="72" height="72")
+              .sentence__txt Выезд к пациентам <br> в течение 39 минут.
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico03.svg" alt="img" width="72" height="72")
+              .sentence__txt Дежурные врачи в Москве <br> и прилегающих районах.
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico04.svg" alt="img" width="72" height="72")
+              .sentence__txt Анонимность — не разглашаем <br> полученную информацию, <br> не требуем ФИО по паспорту.
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico05.svg" alt="img" width="72" height="72")
+              .sentence__txt С лицензиями, дипломами и сертификатами <br> можно ознакомиться при вызове доктора.
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico06.svg" alt="img" width="72" height="72")
+              .sentence__txt Отсутствие наценки <br> на ночные вызовы.
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico07.svg" alt="img" width="72" height="72")
+              .sentence__txt Оплата любым способом — <br> наличные, карта, он-лайн <br> платежи.
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico08.svg" alt="img" width="72" height="72")
+              .sentence__txt Честные доступные цены, <br> обсуждаемые перед вызовом.
+            li
+              .sentence__ico
+                img(src="./img/icon/sentence-ico09.svg" alt="img" width="72" height="72")
+              .sentence__txt Не привлекаем постороннее <br> внимание: автопарк и одежда врачей <br> без медицинской символики.
+
+    .home-procedure.b-lazy.webp-img(data-webp="./img/home-procedure-bg.webp"
+      data-webp-mobile="./img/home-procedure-bg-mobile.webp"
+      data-img="./img/home-procedure-bg.png"
+      data-img-mobile="./img/home-procedure-bg-mobile.png")
+      .home-procedure__inner.site-container
+        .home-procedure__title Как проходит процедура <br> вывода из запоя на дому?
+        .home-procedure__content
+          .home-procedure__img
+            picture
+              source(srcset="./img/home-procedure-main.webp" type="image/webp")
+              source(srcset="./img/home-procedure-main.png" type="image/png")
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="680" )
+            .home-procedure__btn
+              a(href="#").site-btn.home-procedure__btn-i вызвать нарколога на дом
+          .home-procedure__list
+            .home-procedure__item
+              .home-procedure__num 1
+              .home-procedure__txt.
+                Вы звоните в клинику “Практик” и сообщаете оператору о проблеме с алкоголем. Отвечаете на пару простых вопросов. Врач приедет по вашему адресу в сжатые сроки.
+            .home-procedure__item
+              .home-procedure__num 2
+              .home-procedure__txt.
+                После приезда врач проводит обследование, определяет тактику лечения очищает организм от токсинов, используя капельницу с лекарствами. В каждом случае используются разные препараты и их пропорции. Учитываются: длительность запоя, степень опьянения, возраст, заболевания.
+            .home-procedure__item
+              .home-procedure__num 3
+              .home-procedure__txt.
+                Во время вывода из запоя на дому проводится беседа с зависимым и родственниками. Врачом даются рекомендации по дальнейшему лечению. При необходимости предлагаются варианты кодирования.
+            .home-procedure__item
+              .home-procedure__num 4
+              .home-procedure__txt.
+                По окончании инфузионной терапии врач оценивает текущее состояние пациента, расписывает курс медикаментозной терапии, оставляет таблетки на 3-5 дней, заполняет медицинскую документацию: амбулаторную карту, справку о прохождении лечения, памятку о кодировании и выписывает чек.
+
+    .license
+      .license__inner.site-container
+        .license__content
+          .license__title.site-title2 Лицензии и сертификаты
+          .license__subtitle Специалисты наркологического центра имеют необходимую документацию, подтверждающую:
+          .license__list
+            .license__list-i Получение высшего медицинского образования;
+            .license__list-i Допуск к осуществлению фармацевтической и лечебной деятельности по определенным специальностям;
+            .license__list-i Прохождение курсов повышения квалификации.
+        .license__slider#licen-slider
+          .license__slider-item
+            a(href="./img/license-img.png").license__link
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-blazy="./img/license-img.png" alt="img" ).b-lazy.license__img
+          .license__slider-item
+            a(href="./img/license-img.png").license__link
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-blazy="./img/license-img.png" alt="img" ).b-lazy.license__img
+          .license__slider-item
+            a(href="./img/license-img.png").license__link
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-blazy="./img/license-img.png" alt="img" ).b-lazy.license__img
+
+    .gallery-block
+      .gallery-block__inner
+        .gallery-block__title.site-title2 Фото процедуры на дому и в клинике
+        .gallery-block__slider#gallery-block-slider
+          .gallery-block__item
+            a(href="./img/gallery-img01.jpg").gallery-block__link
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-blazy="./img/gallery-img01.jpg" alt="img" ).b-lazy.gallery-block__img
+          .gallery-block__item
+            a(href="./img/gallery-img02.jpg").gallery-block__link
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-blazy="./img/gallery-img02.jpg" alt="img" ).b-lazy.gallery-block__img
+          .gallery-block__item
+            a(href="./img/gallery-img03.jpg").gallery-block__link
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-blazy="./img/gallery-img03.jpg" alt="img" ).b-lazy.gallery-block__img
+
+
+    .text-block.text-block--service.b-lazy.webp-img(data-webp="./img/text-block-3.webp" data-img="./img/text-block-3.png")
+      .text-block__inner.site-container
+        .text-block__content
+          .text-block__title.site-title2 Порядок выведения из запойного состояния и лечения запоя:
+          .text-block__sub
+            .top-block__items
+              span Экспресс вывод из запоя
+              a(href="#").top-block__link Стандарт
+              a(href="#").top-block__link Комфорт
+              a(href="#").top-block__link VIP
+          .text-block__desc-line
+            p В случае длительного употребления алкоголя рекомендуем обратиться в медицинскую клинику «Практик» в Москве, среди наших услуг по лечению различных зависимостей, основной является выведение из запоя в условиях дома или стационара. Злоупотребление алкогольными продуктами одна из самых тяжелых болезней, которые трудно поддаются терапевтическому воздействию. Если человек самостоятельно не контролирует количество выпитого и не может перестать употреблять алкоголь на протяжении длительного времени, ему нужна помощь. Наша клиника лечения алкоголизма «Практик» проведет срочный вывод из запоя в Москве на дому или в стационаре, можете обращаться в любое время суток, при вызове на дом бригада прибудет в кротчайшие сроки и окажет квалифицированную и профессиональную помощь.
+
+
+    .motivated.b-lazy.webp-img(data-webp="./img/motivated-bg-2.webp"
+      data-webp-mobile="./img/motivated-bg-mobile.webp"
+      data-img="./img/motivated-bg-2.png"
+      data-img-mobile="./img/motivated-bg-mobile.png")
+      .motivated__inner.site-container
+        .motivated__content
+          .motivated__title.site-title2 Мотивация зависимых
+          .motivated__txt
+            p
+              strong Не знаете как уговорить близкого начать лечение? Мы поможем! Специалисты центра по мотивации гарантированно убедят зависимого начать лечение.
+
+          .motivated__row
+            .motivated__phone
+              a(href="tel:88003012803") тел. 8 (800) 301-28-03
+            .motivated__btn.site-btn--img-wrap
+              a(href="#").motivated__btn-i.site-btn.site-btn--red.site-btn--img Отправить
+                picture
+                  source(srcset="./img/icon/blokno-ico.webp" type="image/webp")
+                  source(srcset="./img/icon/blokno-ico.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" width="100" height="93")
+
+
+          .motivated__caption.
+            Позвоните по телефону горячей линии и получите бесплатную консультацию нарколога. Мы работаем круглосуточно 24/7
+
+    .price-block.b-lazy.webp-img(data-webp="./img/price-block-bg.webp"
+      data-webp-mobile=""
+      data-img="./img/price-block-bg.jpg"
+      data-img-mobile="")
+      .price-block__inner.site-container
+        .price-block__content
+          .price-block__title.site-title2 Цены на вывод из запоя:
+          .price-block__table
+            table
+              tr
+                th Услуга
+                th Стоимость
+              tr
+                td На дому
+                td от 3 200 руб.
+              tr
+                td В стационаре клиники
+                td от 3 200 руб.
+              tr
+                td Капельница амбулаторно
+                td от 3 000 руб.
+              tr
+                td Скидка на повторный вызов
+                td 1 000 руб.
+              tr
+                td Курс индивидуального лечения на дому
+                td от 12 000 руб.
+
+    .text-block2.b-lazy.webp-img(data-webp="./img/text-3-bg.webp" data-img="./img/text-3-bg.png" data-webp-mobile='./img/text-3-bg-mob.webp' data-img-mobile='./img/text-3-bg-mob.png')
+      .text-block2__inner.site-container
+        .text-block2__content.text-block2__content--service
+          .text-block2__title Вывод из запоя на дому в Москве
+          .text-block2__txt
+            p При нахождении в запое длительное время не стоит заниматься попытками оказания этой помощи своим родным или близким самостоятельно, а особенно приобретая для этого препараты в аптеке, этим можно нанести человеку непоправимый вред. Медицинское учреждение «Практик» в Москве окажет необходимую помощь вам или вашим близким без негативного влияния на организм, процедуру проведут профессиональные наркологи с использованием только проверенных и надежных лекарственных средств.
+
+            span Анонимная наркологическая помощь в Москве на дому и стационаре
+
+            ul
+              li длительность нахождения в запойном состоянии составляет более 4 дней;
+              li человек утратил контроль над объемом выпиваемого алкоголя, не может вспомнить сколько выпил накануне;
+              li малая продолжительность перерывов между запоями, а само запойное состояние все длительней по времени;
+              li психическое состояние больного позволяет провести сеанс в домашних условиях, человек не проявляет агрессию к окружающим его людям и специалистам;
+              li нет ограничений по медицинским противопоказаниям;
+              li не желание пациента посещать стационар с этой целью.
+              li малая продолжительность перерывов между запоями, а само запойное состояние все длительней по времени;
+
+            p Этапы проведения выведения из запоя на дому в Москве
+
+            span По приезду специалисты соблюдают следующие этапы:
+            ul
+              li диагностируют состояние больного, собирают информацию о болезни, длительности пребывания в этом состоянии, выясняют сопутствующие патологии и противопоказания для проведения этого мероприятия дома;
+              li персональных подбор лекарственных средств для клиента;
+              li установка капельницы с необходимыми лекарственными средствами;
+              li проведение детоксикационных мероприятий;
+              li на протяжении всего сеанса доктор присутствует рядом с пациентом и контролирует его состояние.
+              li установка капельницы с необходимыми лекарственными средствами;
+
+            span По приезду специалисты соблюдают следующие этапы:
+            ol
+              li все лекарственные препараты подобраны в индивидуальном порядке с учетом их переносимости;
+              li приезд бригады в назначенное время круглосуточно;
+              li полная анонимность проведения процедуры;
+              li доступная цена;
+              li полная анонимность проведения процедуры;
+              li предварительная телефонная бесплатная консультация, позвонив в центр вы можете узнать подробности проведения данной процедуры, вызвать наших специалистов.
+
+            hr
+
+            h3 Вывод из запоя в стационаре в центре «Практик»
+
+            p Если по медицинским показаниям вывод из запоя дома не возможен, процедура проводится в условиях стационара.
+
+            span Вывод из запоя в стационаре в центре «Практик»
+
+            ul
+              li слишком молодой или пожилой возраст;
+              li тяжелое состояние больного, вызвавшее опасения у специалистов;
+              li тяжелые сопутствующие патологии;
+              li слишком молодой или пожилой возраст;
+              li алкогольный делирий, с агрессией к окружению.
+
+            p В нашем специализированном заведении в Москве вас ждут комфортные условия пребывания, качественная быстрая помощь, персональный подход к каждому больному, анонимность вашего нахождения в нашем центре.
+
+            hr
+
+            h3 Капельница от запоя в Москве и ее состав
+
+            p Вся помощь осуществляется путем капельного введения препаратов, благодаря такому методу воздействия наступает быстрый эффект, очищается кровь и органы от токсических компонентов алкоголя.
+
+            span Наиболее часто применяются лекарственные препараты:
+
+            ul
+              li гепатопротекторы;
+              li антигистаминные;
+              li седативные и транквилизаторы — снимают болевой синдром, пациент пребывает всю процедуру в состоянии сна;
+              li витаминные комплексы.
+
+            p Если все прошло по протоколу, первые улучшения после установки капельницы от запоя наблюдаются уже через 25-30 минут.
+
+            p
+              b Срочный вывод из запоя на дому и в стационаре в Москве – это своевременная квалифицированная помощь специалистов нашего центра, улучшение состояния организма за короткий период времени, толчок на дальнейшее преодоление зависимости от приема спиртных напитков. <a href="#">Эффективное кодирование от алкоголизма</a> поможет избежать рецидивов в будущем.
+
+
+
