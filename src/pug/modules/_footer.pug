@@ -1,110 +1,193 @@
 footer.footer
   .footer__inner.site-container
-    .section
-      h2.section__title Settings
-      .section__content
-        .section__row.hover-js
-          .section__checkbox
-            input(type="checkbox" id="checkbox01")
-            label(for="checkbox01")
-              span Skip Existing
-        .section__row.hover-js
-          .section__checkbox
-            input(type="checkbox" id="checkbox02")
-            label(for="checkbox02")
-              span Skip Existing Faces
-        .section__row.hover-js
-          .section__checkbox
-            input(type="checkbox" id="checkbox03")
-            label(for="checkbox03")
-              span Skip Saving Faces
-    .section
-      h2.section__title Plugins
-      .section__content
-        .section__subsection
-          h3.section__subtitle Detector
-          .section__col-wrap
-            .section__col
+    .main-content
+      .main-content__row.row
+        .main-content__col.col
+          .section.section--data
+            h2.section__title Data
+            .section__content
               .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton01" name="radio01")
-                  label(for="radioButton01")
-                    span Cv2-Dnn
-            .section__col
+                .section__inputtext
+                  label(for="inputtext01") Input Dir
+                  input(type="text" id="inputtext01")
+                  a(href="#")
+                    include ../../img/icon/icon_video.svg
+                  a(href="#")
+                    include ../../img/icon/icon_image.svg
               .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton02" name="radio01")
-                  label(for="radioButton02")
-                    span Mtcnn
-            .section__col
+                .section__inputtext
+                  label(for="inputtext02") Output Dir
+                  input(type="text" id="inputtext02")
+                  a(href="#")
+                    include ../../img/icon/icon_open.svg
               .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton03" name="radio01")
-                  label(for="radioButton03")
-                    span S3Fd
-        .section__subsection
-          h3.section__subtitle Aligner
-          .section__col-wrap
-            .section__col
-              .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton04" name="radio02")
-                  label(for="radioButton04")
-                    span Cv2-Dnn
-            .section__col
-              .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton05" name="radio02")
-                  label(for="radioButton05")
-                    span Fan
-        .section__subsection
-          h3.section__subtitle Normalization
-          .section__col-wrap
-            .section__col
-              .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton06" name="radio03")
-                  label(for="radioButton06")
-                    span None
-            .section__col
-              .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton07" name="radio03")
-                  label(for="radioButton07")
-                    span Clahe
-            .section__col
-              .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton08" name="radio03")
-                  label(for="radioButton08")
-                    span Hist
-            .section__col
-              .section__row.hover-js
-                .section__radio
-                  input(type="radio" id="radioButton09" name="radio03")
-                  label(for="radioButton09")
-                    span Mean
-        .section__subsection
-          h3.section__subtitle Masker
-          .section__col-wrap
-            .section__col
+                .section__inputtext
+                  label(for="inputtext03") Alignments
+                  input(type="text" id="inputtext03")
+                  a(href="#")
+                    include ../../img/icon/icon_new-file.svg
+
+          .section
+            h2.section__title Output
+            .section__content
               .section__row.hover-js
                 .section__checkbox
-                  input(type="checkbox" id="checkbox04")
-                  label(for="checkbox04")
-                    span Unet-Dfl
-            .section__col
+                  input(type="checkbox" id="checkbox00")
+                  label(for="checkbox00")
+                    span Debug Landmarks
+          .section
+            h2.section__title Settings
+            .section__content
               .section__row.hover-js
                 .section__checkbox
-                  input(type="checkbox" id="checkbox05")
-                  label(for="checkbox05")
-                    span Vgg-Clear
-            .section__col
+                  input(type="checkbox" id="checkbox01")
+                  label(for="checkbox01")
+                    span Skip Existing
               .section__row.hover-js
                 .section__checkbox
-                  input(type="checkbox" id="checkbox06")
-                  label(for="checkbox06")
-                    span Vgg-Obstructed
+                  input(type="checkbox" id="checkbox02")
+                  label(for="checkbox02")
+                    span Skip Existing Faces
+              .section__row.hover-js
+                .section__checkbox
+                  input(type="checkbox" id="checkbox03")
+                  label(for="checkbox03")
+                    span Skip Saving Faces
+        .main-content__col.col
+          .section
+            h2.section__title Plugins
+            .section__content
+              .section__subsection
+                h3.section__subtitle Detector
+                .section__col-wrap
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton01" name="radio01")
+                        label(for="radioButton01")
+                          span Cv2-Dnn
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton02" name="radio01")
+                        label(for="radioButton02")
+                          span Mtcnn
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton03" name="radio01")
+                        label(for="radioButton03")
+                          span S3Fd
+              .section__subsection
+                h3.section__subtitle Aligner
+                .section__col-wrap
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton04" name="radio02")
+                        label(for="radioButton04")
+                          span Cv2-Dnn
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton05" name="radio02")
+                        label(for="radioButton05")
+                          span Fan
+              .section__subsection
+                h3.section__subtitle Normalization
+                .section__col-wrap
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton06" name="radio03")
+                        label(for="radioButton06")
+                          span None
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton07" name="radio03")
+                        label(for="radioButton07")
+                          span Clahe
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton08" name="radio03")
+                        label(for="radioButton08")
+                          span Hist
+                  .section__col
+                    .section__row.hover-js
+                      .section__radio
+                        input(type="radio" id="radioButton09" name="radio03")
+                        label(for="radioButton09")
+                          span Mean
+              .section__subsection
+                h3.section__subtitle Masker
+                .section__col-wrap
+                  .section__col
+                    .section__row.hover-js
+                      .section__checkbox
+                        input(type="checkbox" id="checkbox04")
+                        label(for="checkbox04")
+                          span Unet-Dfl
+                  .section__col
+                    .section__row.hover-js
+                      .section__checkbox
+                        input(type="checkbox" id="checkbox05")
+                        label(for="checkbox05")
+                          span Vgg-Clear
+                  .section__col
+                    .section__row.hover-js
+                      .section__checkbox
+                        input(type="checkbox" id="checkbox06")
+                        label(for="checkbox06")
+                          span Vgg-Obstructed
+              .section__subsection
+                h3.section__subtitle.section__subtitle--input Rotate Images
+                  .section__inputtext
+                    input(type="text")
+
+        .main-content__col.col
+          .section.section--face-processing
+            h2.section__title Face Processing
+            .section__content
+              .section__row.hover-js
+                .section__inputtext
+                  label(for="inputtext04") Nfilter
+                  input(type="text" id="inputtext04")
+                  a(href="#")
+                    include ../../img/icon/icon_new-file.svg
+              .section__row.hover-js
+                .section__inputtext
+                  label(for="inputtext05") Filter
+                  input(type="text" id="inputtext05")
+                  a(href="#")
+                    include ../../img/icon/icon_new-file.svg
+          .section.section--global-options
+            h2.section__title Global Options
+            .section__content
+              .section__row.hover-js
+                .section__inputtext
+                  label(for="inputtext06") Configfile
+                  input(type="text" id="inputtext06")
+                  a(href="#")
+                    include ../../img/icon/icon_new-file.svg
+              .section__row
+                .section__select
+                  span.section__select-label Logfile
+                  .section__select-i
+                    select
+                      option(selected value="")
+                      option one
+                      option two
+                      option three
+                      option four
+
+              .section__row.hover-js
+                .section__inputtext
+                  label(for="inputtext07") Logfile
+                  input(type="text" id="inputtext07")
+                  a(href="#")
+                    include ../../img/icon/icon_save-as.svg
 
 
 //.popup.callback
