@@ -1056,6 +1056,10 @@ input{
     width: 100%;
   }
 
+  &.tooltip-popup{
+
+  }
+
   &__inner{
     position: relative;
     background: #FFFFFF;
@@ -1066,9 +1070,10 @@ input{
 
   &.option-popup &__inner{
     background: #ECE9DF;
-    border: 1px solid #ECE9DF;
-    box-shadow: 0px 4px 8px rgba(41, 7, 115, 0.16);
-    border-radius: 4px;
+  }
+
+  &.tooltip-popup &__inner{
+
   }
 
   &__close{
@@ -1087,6 +1092,12 @@ input{
     background: url("../img/icon/icon_close.svg") center no-repeat;
   }
 
+  &.tooltip-popup &__close{
+    right: 8px;
+    top: 8px;
+    background: url("../img/icon/icon_close.svg") center no-repeat;
+  }
+
 
   &__body {
     padding: 9px 40px 9px 16px;
@@ -1100,6 +1111,10 @@ input{
 
   &.option-popup &__body {
     padding: 15px 40px 3px 16px;
+  }
+
+  &.tooltip-popup &__body {
+    padding: 9px 36px 9px 16px;
   }
 }
 
