@@ -14,4 +14,57 @@ block content
       img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
 
   div.main-wrap
+    .top-buttons
+      .top-buttons__items
+        .top-buttons__col
+          .top-buttons__col-name Project
+          .top-buttons__row
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_new-file.svg
+              span Create
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_open.svg
+              span Open
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_save.svg
+              span Save
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_save-as.svg
+              span Save as
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_reload.svg
+              span Reload
+        .top-buttons__col
+          .top-buttons__col-name Task
+          .top-buttons__row
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_load.svg
+              span Load
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_save.svg
+              span Save
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_save-as.svg
+              span Save as
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_reset.svg
+              span Reset
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_reload.svg
+              span Reload
+        .top-buttons__col
+          .top-buttons__col-name Configure
+          .top-buttons__row
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_train.svg
+              span Train
+            a(href="#").top-buttons__item
+              include ../img/icon/icon_convert.svg
+              span Convert
+
+    .option
+      .option__tiems
+        a(href="#").option__item.active Extract
+        a(href="#").option__item Train
+        a(href="#").option__item Convert
 
