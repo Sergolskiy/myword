@@ -547,6 +547,12 @@ input{
 
   &__item{
     margin-right: 10px;
+    transition: 0.3s;
+    display: inline-block;
+
+    &:hover{
+      transform: scale(0.9);
+    }
 
     @media (max-width: 960px) {
       display: flex;
@@ -593,6 +599,11 @@ input{
     line-height: 24px;
     font-family: Ubuntu;
     border-radius: 0px 0px 6px 6px;
+    transition: 0.3s;
+
+    &:hover{
+      background: #ECE9DF;
+    }
 
     &.active{
       background: #ECE9DF;
@@ -689,7 +700,15 @@ input{
     }
   }
 
+  &--face-processing{
+    .section__inputtext label{
+      min-width: 120px;
+    }
+  }
+
+  &--face-processing &__row,
   &--data &__row,
+  &--output &__row.slider-wrap,
   &--global-options &__row{
     width: 100%;
 
@@ -923,6 +942,53 @@ input{
     }
   }
 
+}
+
+.slider-wrap{
+  width: 100%;
+
+  label{
+    min-width: 130px;
+  }
+
+  .slider{
+    width: 100%;
+  }
+
+  .slider-count{
+    width: 52px;
+    margin-left: 12px;
+    height: 28px;
+  }
+
+  .noUi-horizontal {
+    height: 4px;
+    background: #ECE9DF;
+    border-radius: 5px;
+    border: 0;
+  }
+
+  .noUi-horizontal .noUi-handle {
+    width: 20px;
+    height: 20px;
+    right: -12px;
+    top: -9px;
+    background: #4C17BF;
+    box-shadow: none;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+
+    //&:active{
+    //
+    //  border: 3px solid #ece9df;
+    //}
+
+    &:after,
+    &:before{
+      display: none;
+    }
+  }
 }
 
 .main-content{

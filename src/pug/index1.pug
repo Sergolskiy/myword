@@ -106,14 +106,30 @@ block content
                   a(href="#")
                     include ../img/icon/icon_new-file.svg
 
-          .section
+          .section.section--output
             h2.section__title Output
             .section__content
+              .section__row.hover-js.slider-wrap
+                .section__inputtext
+                  label(for="inputtext01") Extract Every N
+                  .slider
+                  input(type="text").slider-count
+              .section__row.hover-js.slider-wrap
+                .section__inputtext
+                  label(for="inputtext01") Size
+                  .slider
+                  input(type="text").slider-count
+              .section__row.hover-js.slider-wrap
+                .section__inputtext
+                  label(for="inputtext01") Save Interval
+                  .slider
+                  input(type="text").slider-count
               .section__row.hover-js
                 .section__checkbox
                   input(type="checkbox" id="checkbox00")
                   label(for="checkbox00")
                     span Debug Landmarks
+
           .section
             h2.section__title Settings
             .section__content
@@ -229,6 +245,11 @@ block content
           .section.section--face-processing
             h2.section__title Face Processing
             .section__content
+              .section__row.hover-js.slider-wrap
+                .section__inputtext
+                  label(for="inputtext01") Min Size
+                  .slider
+                  input(type="text").slider-count
               .section__row.hover-js
                 .section__inputtext
                   label(for="inputtext04") Nfilter
@@ -241,6 +262,11 @@ block content
                   input(type="text" id="inputtext05")
                   a(href="#")
                     include ../img/icon/icon_filter.svg
+              .section__row.hover-js.slider-wrap
+                .section__inputtext
+                  label(for="inputtext01") Ref Threshold
+                  .slider
+                  input(type="text").slider-count
           .section.section--global-options
             h2.section__title Global Options
             .section__content
