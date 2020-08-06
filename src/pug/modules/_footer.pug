@@ -1,10 +1,116 @@
 footer.footer
   .footer__inner.site-container
+    .section
+      h2.section__title Settings
+      .section__content
+        .section__row.hover-js
+          .section__checkbox
+            input(type="checkbox" id="checkbox01")
+            label(for="checkbox01")
+              span Skip Existing
+        .section__row.hover-js
+          .section__checkbox
+            input(type="checkbox" id="checkbox02")
+            label(for="checkbox02")
+              span Skip Existing Faces
+        .section__row.hover-js
+          .section__checkbox
+            input(type="checkbox" id="checkbox03")
+            label(for="checkbox03")
+              span Skip Saving Faces
+    .section
+      h2.section__title Plugins
+      .section__content
+        .section__subsection
+          h3.section__subtitle Detector
+          .section__col-wrap
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton01" name="radio01")
+                  label(for="radioButton01")
+                    span Cv2-Dnn
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton02" name="radio01")
+                  label(for="radioButton02")
+                    span Mtcnn
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton03" name="radio01")
+                  label(for="radioButton03")
+                    span S3Fd
+        .section__subsection
+          h3.section__subtitle Aligner
+          .section__col-wrap
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton04" name="radio02")
+                  label(for="radioButton04")
+                    span Cv2-Dnn
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton05" name="radio02")
+                  label(for="radioButton05")
+                    span Fan
+        .section__subsection
+          h3.section__subtitle Normalization
+          .section__col-wrap
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton06" name="radio03")
+                  label(for="radioButton06")
+                    span None
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton07" name="radio03")
+                  label(for="radioButton07")
+                    span Clahe
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton08" name="radio03")
+                  label(for="radioButton08")
+                    span Hist
+            .section__col
+              .section__row.hover-js
+                .section__radio
+                  input(type="radio" id="radioButton09" name="radio03")
+                  label(for="radioButton09")
+                    span Mean
+        .section__subsection
+          h3.section__subtitle Masker
+          .section__col-wrap
+            .section__col
+              .section__row.hover-js
+                .section__checkbox
+                  input(type="checkbox" id="checkbox04")
+                  label(for="checkbox04")
+                    span Unet-Dfl
+            .section__col
+              .section__row.hover-js
+                .section__checkbox
+                  input(type="checkbox" id="checkbox05")
+                  label(for="checkbox05")
+                    span Vgg-Clear
+            .section__col
+              .section__row.hover-js
+                .section__checkbox
+                  input(type="checkbox" id="checkbox06")
+                  label(for="checkbox06")
+                    span Vgg-Obstructed
+
 
 //.popup.callback
   .popup__body
     .popup__inner
-      .popup__close
+      .popup__closeу
         .popup__close-ico
       .popup__content.callback__content.site-container
 

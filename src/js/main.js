@@ -193,6 +193,14 @@ $(document).ready(function () {
   });
   /*popups end*/
 
+  $( ".hover-js" ).hover(
+    function() {
+      $(this).addClass('hover');
+    }, function() {
+      $(this).removeClass('hover');
+    }
+  );
+
 });
 
 
