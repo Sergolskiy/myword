@@ -44,10 +44,10 @@ $(document).ready(function () {
       $(this).closest('.quest__item').addClass('active');
     }
   });
-
-  var bLazy = new Blazy({
-    src: 'data-blazy' // Default is data-src
-  });
+  //
+  // var bLazy = new Blazy({
+  //   src: 'data-blazy' // Default is data-src
+  // });
 
 
   $('.header__mobile-menu').click(function () {
@@ -105,9 +105,9 @@ $(document).ready(function () {
     }
   });
 
-  var bLazy = new Blazy({
-    src: 'data-blazy'
-  });
+  // var bLazy = new Blazy({
+  //   src: 'data-blazy'
+  // });
 
   // checking browser for WEBP
   hasWebP().then(function () {
@@ -166,7 +166,7 @@ $(document).ready(function () {
     $(this).prev().click();
   });
 
-  $('.phone').inputmask("+7 (999) 999-99-99");
+  // $('.phone').inputmask("+7 (999) 999-99-99");
 
   /*popups start*/
   $(document).on('click', 'a[data-modal-class]', function (e) {
@@ -200,6 +200,10 @@ $(document).ready(function () {
       $(this).removeClass('hover');
     }
   );
+
+  $('.header__menu-arr').click(function () {
+    $(this).closest('.header__menu-item').toggleClass('open');
+  });
 
 });
 
