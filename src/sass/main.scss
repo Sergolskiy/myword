@@ -508,6 +508,12 @@ input{
 
   &__item{
     margin-right: 10px;
+    transition: 0.3s;
+    display: inline-block;
+
+    &:hover{
+      transform: scale(0.9);
+    }
 
     @media (max-width: 960px) {
       display: flex;
@@ -553,6 +559,11 @@ input{
     line-height: 24px;
     font-family: Ubuntu;
     border-radius: 0px 0px 6px 6px;
+    transition: 0.3s;
+
+    &:hover{
+      background: #ECE9DF;
+    }
 
     &.active{
       background: #ECE9DF;
